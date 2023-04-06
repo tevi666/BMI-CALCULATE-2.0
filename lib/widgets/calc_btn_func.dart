@@ -25,28 +25,28 @@ class CalcBtnFunc extends StatelessWidget {
         final res = weight! / (heightSquared * heightSquared);
         if (res < 16) {
           color = Colors.grey;
-          category = 'Marked deficit of body mass';
+          category = AppTexts.marketDeficitBody;
         } else if (res >= 16 && res < 17) {
           color = AppColors.lightBlueGrey;
-          category = 'High body mass deficit';
+          category = AppTexts.bodyMassDeficit;
         } else if (res >= 17 && res < 18.5) {
           color = AppColors.lightGreenAccent;
-          category = "Insufficient body mass";
+          category = AppTexts.insufficientBody;
         } else if (res >= 18.5 && res < 25) {
           color = AppColors.green;
-          category = "Normal body mass";
+          category = AppTexts.normalBodyMass;
         } else if (res >= 25 && res < 30) {
           color = AppColors.orangeAccent;
-          category = "Excess body mass";
+          category = AppTexts.excessBodyMass;
         } else if (res >= 30 && res < 35) {
           color = AppColors.orange;
-          category = "Obesity 1st degree";
+          category = AppTexts.obesity1;
         } else if (res >= 35 && res < 40) {
           color = AppColors.redAccent;
-          category = "Obesity of the 2nd degree";
+          category = AppTexts.obesity2;
         } else {
           color = AppColors.red;
-          category = "Obesity 3rd degree";
+          category = AppTexts.obesity3;
         }
         Navigator.push(
           context,

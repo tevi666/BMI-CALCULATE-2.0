@@ -17,4 +17,12 @@ class AppTexts {
   static const String resTitle1 = 'For your height, a normal weight range would be from 48.6 to 65.3 kilograms.';
   static const String resTitle3 = 'Maintaining a healthy weight may reduce the risk of chornic diseases associated with overweight and obesity.';
   static const String date = 'Apr 2023';
+  static const String marketDeficitBody = 'Marked deficit of body mass';
+  static const String bodyMassDeficit = 'High body mass deficit';
+  static const String insufficientBody = 'Insufficient body mass';
+  static const String normalBodyMass  = 'Normal body mass';
+  static const String excessBodyMass  = 'Excess body mass';
+  static const String obesity1  = 'Obesity 1st degree';
+  static const String obesity2  = 'Obesity of the 2nd degree';
+  static const String obesity3  = 'Obesity 3rd degree';
 }
