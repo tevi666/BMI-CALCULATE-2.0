@@ -1,4 +1,5 @@
 import 'package:bmi_calculate/app/constants/app_texts.dart';
+import 'package:bmi_calculate/app/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/result_screen.dart';
@@ -26,25 +27,25 @@ class CalcBtnFunc extends StatelessWidget {
           color = Colors.grey;
           category = 'Marked deficit of body mass';
         } else if (res >= 16 && res < 17) {
-          color = Colors.lightBlueAccent;
+          color = AppColors.lightBlueGrey;
           category = 'High body mass deficit';
         } else if (res >= 17 && res < 18.5) {
-          color = Colors.lightGreenAccent;
+          color = AppColors.lightGreenAccent;
           category = "Insufficient body mass";
         } else if (res >= 18.5 && res < 25) {
-          color = Colors.green;
+          color = AppColors.green;
           category = "Normal body mass";
         } else if (res >= 25 && res < 30) {
-          color = Colors.orangeAccent;
+          color = AppColors.orangeAccent;
           category = "Excess body mass";
         } else if (res >= 30 && res < 35) {
-          color = Colors.orange;
+          color = AppColors.orange;
           category = "Obesity 1st degree";
         } else if (res >= 35 && res < 40) {
-          color = Colors.redAccent;
+          color = AppColors.redAccent;
           category = "Obesity of the 2nd degree";
         } else {
-          color = Colors.red;
+          color = AppColors.red;
           category = "Obesity 3rd degree";
         }
         Navigator.push(
