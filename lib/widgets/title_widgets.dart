@@ -23,7 +23,7 @@ class TitleWidgets extends StatelessWidget {
               textAlign: TextAlign.end,
             ),
           ),
-          AppSizedbox.h60,
+          AppSizedBox.h60,
           Align(
             alignment: Alignment.topLeft,
             child: Text(

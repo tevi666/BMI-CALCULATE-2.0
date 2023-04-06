@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/app/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class ValueTitle extends StatelessWidget {
@@ -5,6 +6,6 @@ class ValueTitle extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Text(title);
+    return Text(title, style: AppTextStyles.b20,);
   }
 }

@@ -38,7 +38,7 @@ class AgeWidgets extends StatelessWidget {
                   onTap: onTapAgeRm,
                 ),
                 Text(
-                  age.toString(),
+                  age.toString(), style: AppTextStyles.b20,
                 ),
                 OperationBtn(
                   icon: Icons.add_circle,

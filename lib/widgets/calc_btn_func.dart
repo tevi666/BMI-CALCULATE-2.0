@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/app/constants/app_texts.dart';
 import 'package:bmi_calculate/app/themes/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class CalcBtnFunc extends StatelessWidget {
         final heightSquared = height! / 100;
         final res = weight! / (heightSquared * heightSquared);
         if (res < 16) {
-          color = Colors.grey;
+          color = AppColors.grey;
           category = AppTexts.marketDeficitBody;
         } else if (res >= 16 && res < 17) {
           color = AppColors.lightBlueGrey;
@@ -54,13 +55,16 @@ class CalcBtnFunc extends StatelessWidget {
             builder: (context) => ResultScreen(
               bmi: res.toStringAsFixed(1),
               color: TextStyle(color: color),
-              category: category!,
+              category: category!, colors: color!,
             ),
           ),
         );
       },
-      child: const CalcBtn(
-        title: AppTexts.calculate,
+      child: const Padding(
+        padding: AppPaddings.rl20,
+        child: CalcBtn(
+          title: AppTexts.calculate,
+        ),
       ),
     );
   }

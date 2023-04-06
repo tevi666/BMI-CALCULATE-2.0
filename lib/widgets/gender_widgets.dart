@@ -46,7 +46,7 @@ class GenderWidgets extends StatelessWidget {
                   Expanded(
                     child: Column(
                       children: [
-                        AppSizedbox.h10,
+                        AppSizedBox.h10,
                         Padding(
                           padding: AppPaddings.r10,
                           child: Align(
@@ -58,9 +58,9 @@ class GenderWidgets extends StatelessWidget {
                           ),
                         ),
                         GenderIconWidgets(icon: icon),
-                        AppSizedbox.h10,
+                        AppSizedBox.h10,
                         GenderTextWidgets(title: title),
-                        AppSizedbox.h20,
+                        AppSizedBox.h20,
                       ],
                     ),
                   ),

@@ -1,4 +1,5 @@
 import 'package:bmi_calculate/app/constants/app_box_decoration.dart';
+import 'package:bmi_calculate/app/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class SelectedInput extends StatelessWidget {
@@ -16,7 +17,7 @@ class SelectedInput extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(title),
+            Text(title, style: AppTextStyles.b20,),
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.keyboard_arrow_down_sharp),

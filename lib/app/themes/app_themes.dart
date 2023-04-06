@@ -5,11 +5,10 @@ class AppThemes {
   AppThemes._();
 
   static ThemeData get appTheme => ThemeData(
-    primarySwatch: Colors.blue,
+    fontFamily: 'Gruppo',
     scaffoldBackgroundColor: AppColors.backgroundColor,
     appBarTheme: const AppBarTheme(
-      backgroundColor: AppColors.backgroundColor,
-      centerTitle: true,
-    ),
+      backgroundColor: AppColors.backgroundColor
+    )
   );
 }

@@ -15,7 +15,7 @@ class ResBmiTopBoxTitle extends StatelessWidget {
       padding: AppPaddings.t20,
       child: Text(
         AppTexts.yourBmiIs,
-        style: AppTextStyles.g20,
+        style: AppTextStyles.y20,
       ),
     );
   }

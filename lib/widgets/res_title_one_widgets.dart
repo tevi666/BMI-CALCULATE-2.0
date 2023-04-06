@@ -12,7 +12,7 @@ class ResTitleOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: AppPaddings.t30rl20,
+      padding: AppPaddings.t50rl20,
       child: Text(
         AppTexts.resTitle1,
         style: AppTextStyles.w20b,

@@ -51,7 +51,7 @@ class HeightWidgets extends StatelessWidget {
                   ),
                 ),
               ),
-              AppSizedbox.w10,
+              AppSizedBox.w10,
               const SelectedInput(
                 title: AppTexts.cm,
               ),

@@ -19,4 +19,5 @@ class AppColors {
   static const Color orange = Colors.orange;
   static const Color redAccent = Colors.redAccent;
   static const Color red = Colors.red;
+  static const Color tealAccent = Colors.tealAccent;
 }

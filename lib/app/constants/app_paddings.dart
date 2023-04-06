@@ -7,6 +7,7 @@ class AppPaddings {
   static const EdgeInsets a12 = EdgeInsets.all(12);
   static const EdgeInsets a16 = EdgeInsets.all(16);
   static const EdgeInsets a32 = EdgeInsets.all(32);
+  static const EdgeInsets a50 = EdgeInsets.all(50);
 
   static const EdgeInsets v32 = EdgeInsets.symmetric(vertical: 32);
   static const EdgeInsets v16 = EdgeInsets.symmetric(vertical: 16);
@@ -26,4 +27,7 @@ class AppPaddings {
   static const EdgeInsets rl20t70 = EdgeInsets.only(right: 20,left: 20, top: 70);
   static const EdgeInsets l40t50 = EdgeInsets.only(left: 40, top: 50);
   static const EdgeInsets t30rl20 = EdgeInsets.only(top: 30, right: 20, left: 20);
+  static const EdgeInsets t50rl20 = EdgeInsets.only(top: 50, right: 20, left: 20);
+  static const EdgeInsets rl20t30 = EdgeInsets.only(top: 40, right: 20, left: 20);
+  static const EdgeInsets rl20 = EdgeInsets.only(right: 20, left: 20);
 }

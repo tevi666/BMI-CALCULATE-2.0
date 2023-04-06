@@ -52,7 +52,7 @@ class WeightWidgets extends StatelessWidget {
                   ),
                 ),
               ),
-              AppSizedbox.w10,
+              AppSizedBox.w10,
               Expanded(
                 flex: 1,
                 child: Container(

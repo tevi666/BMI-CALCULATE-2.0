@@ -4,10 +4,11 @@ import '../widgets/icon_btn_result_widgets.dart';
 import '../widgets/res_body_widgets.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({Key? key, this.bmi, required this.color, required this.category}) : super(key: key);
+  const ResultScreen({Key? key, this.bmi, required this.color, required this.category, required this.colors}) : super(key: key);
   final String? bmi;
   final String category;
   final TextStyle color;
+  final Color colors;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class ResultScreen extends StatelessWidget {
       ),
       backgroundColor: AppColors.backgroundColor,
       body: ResBody(
-        bmi: bmi!, category: category, color: color,
+        bmi: bmi!, category: category, color: color, colors: colors,
       ),
     );
   }

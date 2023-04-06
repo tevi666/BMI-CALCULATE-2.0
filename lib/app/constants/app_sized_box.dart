@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AppSizedbox {
-  AppSizedbox._();
+class AppSizedBox {
+  AppSizedBox._();
 
   static const SizedBox w2 = SizedBox(width: 2);
   static SizedBox get w4 => const SizedBox(width: 4);

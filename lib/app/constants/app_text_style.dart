@@ -22,14 +22,17 @@ class AppTextStyles {
   );
   static TextStyle get whiteColor => const TextStyle(
     color: AppColors.whiteColor,
+  );static TextStyle get whiteColorfz => const TextStyle(
+    color: AppColors.whiteColor,
+    fontSize: 20
   );
   static TextStyle get w30b => const TextStyle(
       color: AppColors.whiteColor,
       fontSize: 30,
       fontWeight: FontWeight.bold
   );
-  static TextStyle get g20 => const TextStyle(
-      color: AppColors.grey,
+  static TextStyle get y20 => const TextStyle(
+      color: AppColors.yellow,
       fontSize: 20,
   );static TextStyle get w20b => const TextStyle(
       color: AppColors.whiteColor,
@@ -43,5 +46,9 @@ class AppTextStyles {
   static TextStyle get green20 => const TextStyle(
       color: AppColors.green,
       fontSize: 20,
+  );static TextStyle get b20 => const TextStyle(
+      color: AppColors.backgroundColor,
+      fontSize: 20,
+      fontWeight: FontWeight.bold
   );
 }

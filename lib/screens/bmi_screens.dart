@@ -129,7 +129,7 @@ class _BmiScreensState extends State<BmiScreens> {
             onTapAgeRm: onTapAgeRm,
           ),
           CalcBtnFunc(height: height, weight: weight),
-          const BottomWave(color: Colors.white, height: 100)
+          const BottomWave(color: AppColors.grey, height: 100)
         ],
       ),
     );

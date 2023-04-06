@@ -12,14 +12,14 @@ class CalcBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: AppPaddings.rl40t30,
+        padding: AppPaddings.rl20t30,
         child: Container(
           height: 40,
           color: AppColors.pinkColor,
           child: Center(
             child: Text(
               title,
-              style: AppTextStyles.whiteColor,
+              style: AppTextStyles.w20,
             ),
           ),
         ));
