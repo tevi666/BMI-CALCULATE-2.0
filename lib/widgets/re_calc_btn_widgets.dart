@@ -12,7 +12,7 @@ class ReCalcBtnWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pop(
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(
             builder: (context) => const BmiScreens(),
