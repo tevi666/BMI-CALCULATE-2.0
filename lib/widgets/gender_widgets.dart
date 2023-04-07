@@ -2,7 +2,6 @@ import 'package:bmi_calculate/app/constants/app_border_radius.dart';
 import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/app/constants/app_sized_box.dart';
 import 'package:flutter/material.dart';
-
 import 'gender_icon_widgets.dart';
 import 'gender_text_widgets.dart';
 

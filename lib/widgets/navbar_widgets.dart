@@ -1,7 +1,6 @@
 import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/widgets/navbar_icon.dart';
 import 'package:flutter/material.dart';
-
 import '../FontAwesome/my_flutter_app_icons.dart';
 
 class NavbarWidgets extends StatelessWidget {

@@ -1,8 +1,5 @@
 import 'package:bmi_calculate/app/constants/app_paddings.dart';
-import 'package:bmi_calculate/app/constants/app_size.dart';
-import 'package:bmi_calculate/app/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
-
 import '../app/constants/app_texts.dart';
 import '../app/themes/app_colors.dart';
 
@@ -56,7 +53,7 @@ class Indicator extends StatelessWidget {
         padding: AppPaddings.a8,
         child: Column(
           children: [
-            Text(category, style: TextStyle(color: colorsTitle, fontSize: 30 ),),
+            Text(category, style: TextStyle(color: colorsTitle, fontSize: 30 ),textAlign: TextAlign.center,),
             Padding(
               padding: AppPaddings.t20,
               child: Row(

@@ -10,7 +10,7 @@ class IconBtnResult extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: AppPaddings.r20,
       child: Icon(
         MyFlutterApp.bell,

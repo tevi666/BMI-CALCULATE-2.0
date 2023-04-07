@@ -20,9 +20,9 @@ class ResInteractiveBox extends StatelessWidget {
       width: 100,
       height: 75,
       child: Column(
-        children: [
-          const ResYourKg(),
-          const ResDateDay(),
+        children: const [
+          ResYourKg(),
+          ResDateDay(),
         ],
       ),
     );

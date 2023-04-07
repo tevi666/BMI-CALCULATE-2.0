@@ -1,6 +1,5 @@
 import 'package:bmi_calculate/app/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
-
 import '../app/constants/app_paddings.dart';
 
 class ResTitleTwo extends StatelessWidget {
@@ -26,7 +25,6 @@ class ResTitleTwo extends StatelessWidget {
             TextSpan(text: category, style: color),
             const TextSpan(text: ' category for adults of your height.'),
           ]
-
       )),
     );
   }

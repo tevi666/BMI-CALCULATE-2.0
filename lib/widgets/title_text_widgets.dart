@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../app/constants/app_text_style.dart';
 
 class TitleText extends StatelessWidget {

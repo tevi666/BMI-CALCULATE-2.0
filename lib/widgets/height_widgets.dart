@@ -1,9 +1,7 @@
-import 'package:bmi_calculate/app/constants/app_border_radius.dart';
 import 'package:bmi_calculate/app/constants/app_box_decoration.dart';
 import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/app/constants/app_sized_box.dart';
 import 'package:bmi_calculate/app/constants/app_texts.dart';
-import 'package:bmi_calculate/app/themes/app_colors.dart';
 import 'package:bmi_calculate/widgets/operation_btn.dart';
 import 'package:bmi_calculate/widgets/selected_input.dart';
 import 'package:bmi_calculate/widgets/title_top_right.dart';

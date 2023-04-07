@@ -3,7 +3,6 @@ import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/app/constants/app_text_style.dart';
 import 'package:bmi_calculate/app/constants/app_texts.dart';
 import 'package:flutter/material.dart';
-
 import 'operation_btn.dart';
 
 class AgeWidgets extends StatelessWidget {
