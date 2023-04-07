@@ -38,7 +38,10 @@ class GenderWidgets extends StatelessWidget {
               decoration: BoxDecoration(
                 color: color,
                 borderRadius: AppBorderRadius.all10,
-                border: Border.all(width: width!, color: borderColor!),
+                border: Border.all(
+                  width: width!,
+                  color: borderColor!,
+                ),
               ),
               child: Row(
                 children: [
@@ -56,9 +59,13 @@ class GenderWidgets extends StatelessWidget {
                             ),
                           ),
                         ),
-                        GenderIconWidgets(icon: icon),
+                        GenderIconWidgets(
+                          icon: icon,
+                        ),
                         AppSizedBox.h10,
-                        GenderTextWidgets(title: title),
+                        GenderTextWidgets(
+                          title: title,
+                        ),
                         AppSizedBox.h20,
                       ],
                     ),

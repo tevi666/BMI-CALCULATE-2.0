@@ -17,7 +17,10 @@ class SelectedInput extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(title, style: AppTextStyles.b20,),
+            Text(
+              title,
+              style: AppTextStyles.b20,
+            ),
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.keyboard_arrow_down_sharp),

@@ -11,16 +11,17 @@ class BottomWave extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: Align(
-      alignment: Alignment.bottomCenter,
-      child: ClipPath(
-        clipper: BottomWaveClipper(),
-        child: Container(
-          color: color,
-          height: height,
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: ClipPath(
+          clipper: BottomWaveClipper(),
+          child: Container(
+            color: color,
+            height: height,
+          ),
         ),
       ),
-    ));
+    );
   }
 }
 

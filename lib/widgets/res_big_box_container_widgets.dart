@@ -9,7 +9,9 @@ import 'indicator.dart';
 class ResBigBoxContainer extends StatelessWidget {
   const ResBigBoxContainer({
     super.key,
-    required this.bmi, this.category, required this.color,
+    required this.bmi,
+    this.category,
+    required this.color,
   });
 
   final String? bmi;
@@ -27,7 +29,11 @@ class ResBigBoxContainer extends StatelessWidget {
         children: [
           const ResBmiTopBoxTitle(),
           ResBmiCalc(bmi: bmi),
-          Indicator(category: category!, color: color, colorsTitle: color,),
+          Indicator(
+            category: category!,
+            color: color,
+            colorsTitle: color,
+          ),
           const BottomWave(
             color: AppColors.blue,
             height: 100,
@@ -37,4 +43,3 @@ class ResBigBoxContainer extends StatelessWidget {
     );
   }
 }
-

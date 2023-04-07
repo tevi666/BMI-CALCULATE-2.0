@@ -20,16 +20,19 @@ class _SplashState extends State<Splash> {
   }
 
   void wait() async {
-    await Future.delayed(const Duration(seconds: 2));
-    goToHomePage();
+    await Future.delayed(
+      const Duration(seconds: 2),
+    );
+    goToHome();
   }
 
-  void goToHomePage() async {
+  void goToHome() async {
     Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => const BmiScreens(),
-        ));
+      context,
+      MaterialPageRoute(
+        builder: (_) => const BmiScreens(),
+      ),
+    );
   }
 
   @override
@@ -51,7 +54,10 @@ class _SplashState extends State<Splash> {
                   ),
                 ),
               ),
-              Text(AppTexts.appTitle, style: AppTextStyles.w30b,)
+              Text(
+                AppTexts.appTitle,
+                style: AppTextStyles.w30b,
+              )
             ],
           ),
         ),

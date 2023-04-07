@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../FontAwesome/my_flutter_app_icons.dart';
 import '../app/constants/app_paddings.dart';
 

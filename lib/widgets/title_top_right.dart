@@ -6,6 +6,9 @@ class ValueTitle extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Text(title, style: AppTextStyles.b20,);
+    return Text(
+      title,
+      style: AppTextStyles.b20,
+    );
   }
 }

@@ -6,7 +6,6 @@ import 'package:bmi_calculate/widgets/operation_btn.dart';
 import 'package:bmi_calculate/widgets/selected_input.dart';
 import 'package:bmi_calculate/widgets/title_top_right.dart';
 import 'package:flutter/material.dart';
-
 import 'title_text_widgets.dart';
 
 class HeightWidgets extends StatelessWidget {

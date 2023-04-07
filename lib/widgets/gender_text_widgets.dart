@@ -11,6 +11,9 @@ class GenderTextWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(title, style:AppTextStyles.whiteColorfz);
+    return Text(
+      title,
+      style: AppTextStyles.whiteColorfz,
+    );
   }
 }

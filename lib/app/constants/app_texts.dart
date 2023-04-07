@@ -25,4 +25,7 @@ class AppTexts {
   static const String obesity1  = 'Obesity 1st degree';
   static const String obesity2  = 'Obesity of the 2nd degree';
   static const String obesity3  = 'Obesity 3rd degree';
+  static const String yourBmi  = 'Your bmi is ';
+  static const String indicating  = ' indicating your weight is in the  ';
+  static const String category  = ' category for adults of your height.';
 }

@@ -8,9 +8,12 @@ import 'package:bmi_calculate/widgets/res_title_two_widgets.dart';
 import 'package:flutter/material.dart';
 
 class ResBody extends StatelessWidget {
-   ResBody({
+  ResBody({
     super.key,
-    required this.bmi, required this.category, required this.color, required this.colors,
+    required this.bmi,
+    required this.category,
+    required this.color,
+    required this.colors,
   });
 
   final String bmi;
@@ -24,11 +27,17 @@ class ResBody extends StatelessWidget {
       children: [
         const ResTitleResultCenter(),
         ResBigBoxContainer(
-          bmi: bmi, category: category, color: colors,
+          bmi: bmi,
+          category: category,
+          color: colors,
         ),
         AppSizedBox.h20,
         const ResTitleOne(),
-        ResTitleTwo(bmi: bmi, category: category, color: color,),
+        ResTitleTwo(
+          bmi: bmi,
+          category: category,
+          color: color,
+        ),
         const ResTitleThree(),
         const ReCalcBtnWidgets(),
       ],
