@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/app/constants/app_texts.dart';
 import 'package:flutter/material.dart';
 import '../widgets/home_app_bar.dart';
 import '../widgets/res_body_widgets.dart';
@@ -19,6 +20,7 @@ class ResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const HomeAppBar(
+        name: AppTexts.result,
         icon: Icons.arrow_back_ios,
       ),
       body: ResBody(

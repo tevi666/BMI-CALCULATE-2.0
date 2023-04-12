@@ -69,6 +69,7 @@ class _BmiScreensState extends State<BmiScreens> {
     return Scaffold(
       appBar: const HomeAppBar(
         icon: Icons.menu,
+        name: AppTexts.appTitle,
       ),
       body: Column(
         children: [

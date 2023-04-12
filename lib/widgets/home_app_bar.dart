@@ -5,8 +5,9 @@ import '../app/constants/app_text_style.dart';
 import '../app/constants/app_texts.dart';
 
 class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
-  const HomeAppBar({Key? key, this.icon}) : super(key: key);
+  const HomeAppBar({Key? key, this.icon, required this.name}) : super(key: key);
   final IconData? icon;
+  final String name;
   @override
   Widget build(BuildContext context) {
     return PreferredSize(
@@ -14,7 +15,7 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
       child: AppBar(
         leading: Icon(icon!),
         title: Text(
-          AppTexts.appTitle,
+          name,
           style: AppTextStyles.w30b,
           textAlign: TextAlign.end,
         ),
