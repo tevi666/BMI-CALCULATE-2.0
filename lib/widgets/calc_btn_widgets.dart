@@ -1,6 +1,6 @@
+import 'package:bmi_calculate/app/constants/app_box_decoration.dart';
 import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/app/constants/app_text_style.dart';
-import 'package:bmi_calculate/app/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CalcBtn extends StatelessWidget {
@@ -12,10 +12,10 @@ class CalcBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: AppPaddings.rl20t30,
+      padding: AppPaddings.t60,
       child: Container(
+        decoration: AppBoxDecoration.br10pink,
         height: 40,
-        color: AppColors.pinkColor,
         child: Center(
           child: Text(
             title,

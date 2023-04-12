@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/app/constants/app_paddings.dart';
 import 'package:bmi_calculate/app/constants/app_sized_box.dart';
 import 'package:bmi_calculate/widgets/re_calc_btn_widgets.dart';
 import 'package:bmi_calculate/widgets/res_big_box_container_widgets.dart';
@@ -39,7 +40,10 @@ class ResBody extends StatelessWidget {
           color: color,
         ),
         const ResTitleThree(),
-        const ReCalcBtnWidgets(),
+        const Padding(
+          padding: AppPaddings.rl20,
+          child: ReCalcBtnWidgets(),
+        ),
       ],
     );
   }

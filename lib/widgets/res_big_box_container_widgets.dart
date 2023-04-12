@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/app/constants/app_box_decoration.dart';
 import 'package:bmi_calculate/widgets/res_bmi_calc_widgets.dart';
 import 'package:bmi_calculate/widgets/res_bmi_top_title_widgets.dart';
 import 'package:flutter/material.dart';
@@ -21,10 +22,10 @@ class ResBigBoxContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: AppBoxDecoration.br10pink,
       margin: AppPaddings.t20,
       height: 300,
       width: 385,
-      color: AppColors.pinkColor,
       child: Column(
         children: [
           const ResBmiTopBoxTitle(),

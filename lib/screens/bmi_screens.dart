@@ -1,38 +1,26 @@
 import 'package:bmi_calculate/app/constants/app_texts.dart';
-import 'package:bmi_calculate/app/themes/app_colors.dart';
-import 'package:bmi_calculate/widgets/age_widgets.dart';
-import 'package:bmi_calculate/widgets/bottom_wave_clipper.dart';
-import 'package:bmi_calculate/widgets/gender_widgets.dart';
-import 'package:bmi_calculate/widgets/height_widgets.dart';
-import 'package:bmi_calculate/widgets/navbar_widgets.dart';
-import 'package:bmi_calculate/widgets/title_widgets.dart';
+import 'package:bmi_calculate/widgets/gender_boxes.dart';
+import 'package:bmi_calculate/widgets/selected_input_widget.dart';
 import 'package:flutter/material.dart';
+import '../widgets/all_general_widget.dart';
 import '../widgets/calc_btn_func.dart';
-import '../widgets/weight_widgets.dart';
+import '../widgets/general_widgets.dart';
+import '../widgets/home_app_bar.dart';
 
 enum Gender { male, female }
 
 class BmiScreens extends StatefulWidget {
   const BmiScreens({Key? key}) : super(key: key);
+
   @override
   State<BmiScreens> createState() => _BmiScreensState();
 }
 
 class _BmiScreensState extends State<BmiScreens> {
-  Gender? gender;
+  Gender gender = Gender.male;
   int weight = 58;
   int height = 173;
   int age = 25;
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
   void onTapWeightAdd() {
     if (weight < 130) {
@@ -79,57 +67,37 @@ class _BmiScreensState extends State<BmiScreens> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundColor,
+      appBar: const HomeAppBar(
+        icon: Icons.menu,
+      ),
       body: Column(
         children: [
-          const NavbarWidgets(),
-          const TitleWidgets(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              GenderWidgets(
-                title: AppTexts.male,
-                icon: Icons.man,
-                onTap: () {
-                  gender = Gender.male;
-                  setState(() {});
-                },
-                width: gender == Gender.male ? 2 : 0,
-                borderColor: gender == Gender.male ? Colors.green : Colors.grey,
-                iconColor: gender == Gender.male ? Colors.green : null,
-              ),
-              const SizedBox(width: 10),
-              GenderWidgets(
-                title: AppTexts.female,
-                icon: Icons.woman,
-                onTap: () {
-                  gender = Gender.female;
-                  setState(() {});
-                },
-                width: gender == Gender.female ? 2 : 0,
-                borderColor:
-                    gender == Gender.female ? Colors.green : Colors.grey,
-                iconColor: gender == Gender.female ? Colors.green : null,
-              ),
-            ],
+          GenderBoxes(
+            gender: gender,
+            onTapMale: () => setState(() => gender = Gender.male),
+            onTapFemale: () => setState(() => gender = Gender.female),
           ),
-          WeightWidgets(
-            weight: weight,
-            onTapWeightAdd: onTapWeightAdd,
-            onTapWeightRm: onTapWeightRm,
+          AllGeneralWidget(
+            num: weight,
+            onTapAdd: onTapWeightAdd,
+            onTapRm: onTapWeightRm,
+            title: AppTexts.weight,
+            selectedTitle: AppTexts.kg,
           ),
-          HeightWidgets(
-            height: height,
-            onTapHeightAdd: onTapHeightAdd,
-            onTapHeightRm: onTapHeightRm,
+          AllGeneralWidget(
+            num: height,
+            onTapAdd: onTapHeightAdd,
+            onTapRm: onTapHeightRm,
+            title: AppTexts.height,
+            selectedTitle: AppTexts.cm,
           ),
-          AgeWidgets(
-            age: age,
-            onTapAgeAdd: onTapAgeAdd,
-            onTapAgeRm: onTapAgeRm,
+          GeneralWidget(
+            general: age,
+            onTapMinus: onTapAgeRm,
+            onTapPlus: onTapAgeAdd,
+            title: AppTexts.age,
           ),
           CalcBtnFunc(height: height, weight: weight),
-          const BottomWave(color: AppColors.grey, height: 100)
         ],
       ),
     );

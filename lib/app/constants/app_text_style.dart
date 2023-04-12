@@ -46,9 +46,14 @@ class AppTextStyles {
   static TextStyle get green20 => const TextStyle(
       color: AppColors.green,
       fontSize: 20,
-  );static TextStyle get b20 => const TextStyle(
+  );
+  static TextStyle get b20 => const TextStyle(
       color: AppColors.backgroundColor,
       fontSize: 20,
       fontWeight: FontWeight.bold
+  );
+  static TextStyle get w15 => const TextStyle(
+      color: AppColors.whiteColor,
+      fontSize: 15,
   );
 }

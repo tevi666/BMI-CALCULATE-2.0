@@ -4,14 +4,9 @@ import 'package:bmi_calculate/app/themes/app_themes.dart';
 import 'package:bmi_calculate/screens/splash_screens.dart';
 import 'package:flutter/material.dart';
 
-class BmiCalc extends StatefulWidget {
+class BmiCalc extends StatelessWidget {
   const BmiCalc({Key? key}) : super(key: key);
 
-  @override
-  State<BmiCalc> createState() => _BmiCalcState();
-}
-
-class _BmiCalcState extends State<BmiCalc> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

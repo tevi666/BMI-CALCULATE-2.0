@@ -34,7 +34,7 @@ class GenderWidgets extends StatelessWidget {
           GestureDetector(
             onTap: onTap,
             child: Container(
-              width: 170,
+              width: 190,
               decoration: BoxDecoration(
                 color: color,
                 borderRadius: AppBorderRadius.all10,

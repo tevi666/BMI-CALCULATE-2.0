@@ -10,4 +10,12 @@ class AppBoxDecoration {
     color: AppColors.grey,
     borderRadius: AppBorderRadius.all10,
   );
+  static get br10pink => BoxDecoration(
+    color: AppColors.pinkColor,
+    borderRadius: AppBorderRadius.all10,
+  );
+  static get br10white => BoxDecoration(
+    borderRadius: AppBorderRadius.all10,
+    color: AppColors.whiteColor,
+  );
 }

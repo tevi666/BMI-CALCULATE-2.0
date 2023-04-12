@@ -10,23 +10,22 @@ class SelectedInput extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child: Container(
-        decoration: AppBoxDecoration.greyAll10,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Text(
-              title,
-              style: AppTextStyles.b20,
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.keyboard_arrow_down_sharp),
-            ),
-          ],
-        ),
+    return Container(
+      width: 100,
+      decoration: AppBoxDecoration.greyAll10,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            title,
+            style: AppTextStyles.b20,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.keyboard_arrow_down_sharp),
+          ),
+        ],
       ),
     );
   }
